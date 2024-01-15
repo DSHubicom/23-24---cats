@@ -21,10 +21,12 @@ El tercer componente es la caja de arena, que mediante un sensor de metano detec
 
 El cuarto componente es un servidor central programado con NodeJs que se encarga de responder a las peticiones de los dispositivos para que sepan la información de los gatos que hay para que actúen en consecuencia.
 
+En la carpeta Esquemas se encuentran los esquemas de los componentes. En la carpeta Proyecto se encuentran los ficheros de configuración Arduino, y en el directorio ServerCentral se encuentra el proyecto del servidor NodejJs.
+
 ## Ejecución
 Los tres archivos de configuración Arduino se pueden escribir en los esquemas correspondientes usando **Arduino IDE**, abriendo los ficheros con el programa y usando la opción **Upload** con el dispositivo que se quiera usar conectado.
 
-Para desplegar el servidor central, es necesario tener instalado **NodeJs** en el sistema y usar los comandos en terminal:
+Para desplegar el servidor central, es necesario tener instalado **NodeJs** en el sistema y usar los comandos en terminal desde la carpeta del proyecto:
 ```sh
 sudo node express.js
 ./uploadServer.sh 80
